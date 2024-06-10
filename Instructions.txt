@@ -1,0 +1,54 @@
+#https://www.youtube.com/watch?v=TJQbDPGzm0Y&list=PL4cUxeGkcC9jZIVqmy_QhfQdi6mzQvJnT&index=1
+
+#Next.js 13 Crash Course Tutorial by Shaun
+
+https://github.com/iamshaunjp/nextjs-masterclass/blob/lesson-11/app/tickets/create/CreateForm.jsx
+
+mkdir net-ninja
+$ npx create-next-app@13.4.9
+✔ What is your project named? … temp
+✔ Would you like to use TypeScript? … No / Yes
+✔ Would you like to use ESLint? … No / Yes
+✔ Would you like to use Tailwind CSS? … No / Yes
+✔ Would you like to use `src/` directory? … No / Yes
+✔ Would you like to use App Router? (recommended) … No / Yes
+✔ Would you like to customize the default import alias? … No / Yes
+Creating a new Next.js app in /Users/binu.b.varghese/source/next/net-ninja/temp.
+
+
+$ json-server --watch --port 4000 ./_data/db.json
+
+# Using jsx instead of tsx
+# Added layout.js 
+# app routing by folders
+    / dashboard
+        page.jsx
+    /tickets tickets
+        /tickets/page.jsx
+# Changed layout.js 
+    - Added CSS on global.css
+    - Modified font to rubik
+# Add NavBar /components/navbar
+    - Created Logo under /components/
+
+# Add _data
+    db.json
+    ran the json-server --watch --port 4000 ./_data/db.json
+# Created TicketList.jsx
+   Loading data from JSON
+   Listing all Tickets
+# Add [id] routing
+    Retrive Ticket by Id
+    page.jsx
+    generateStaticParams - for static website generation using API calls and caching the data to make it faster on CDNs
+# 404 errors
+    Added not-found.jsx at different levels
+# Loading status display while API is retrieving data.
+    Simulated delay to show the loading messages
+    loading.jsx on tickets
+    <Suspense> before <TicketList /> ticketlist page.jsx
+# /tickets/create
+    Create Form
+    Form added data does not get refreshed by default. Added  router.refresh() to refresh the data
+    Client Side script on CreateForm.jsx - "use client". Rest everything is server side script.
+    

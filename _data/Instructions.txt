@@ -1,0 +1,10 @@
+#https://www.youtube.com/watch?v=TJQbDPGzm0Y&list=PL4cUxeGkcC9jZIVqmy_QhfQdi6mzQvJnT&index=1
+
+#Next.js 13 Crash Course Tutorial by Shaun
+
+https://github.com/iamshaunjp/nextjs-masterclass/blob/lesson-11/app/tickets/create/CreateForm.jsx
+
+mkdir net-ninja
+$ npx create-next-app@13.4.9
+
+$ json-server --watch --port 4000 ./_data/db.json
